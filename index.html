@@ -3,523 +3,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NutriGuide — Your BMI Journey</title>
-
+    <title>NutriGuide</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo">NutriGuide</div>
 
-    <header class="header">
-        <div class="container nav">
+    <nav class="nav">
+        <button class="nav-btn" id="startNavBtn">Get Started</button>
+    </nav>
+</header>
 
-            <div class="logo">
-                <span class="logo-icon">+</span>
-                <span>NutriGuide</span>
-            </div>
 
-            <button class="btn btn-small" id="startNavBtn">
+<!-- ================= LANDING PAGE ================= -->
+
+<section id="landingPage">
+
+    <div class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">SMART NUTRITION GUIDANCE</p>
+
+            <h1>Your BMI is just the starting point.</h1>
+
+            <p>
+                Understand your BMI, identify the next step,
+                and explore nutrition guidance built around your information.
+            </p>
+
+            <button class="btn btn-primary" id="startBtn">
                 Get Started
             </button>
+        </div>
+    </div>
+
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="section-tag">HOW IT WORKS</p>
+            <h2>From BMI to better understanding</h2>
+        </div>
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+                <span class="step-number">01</span>
+                <h3>Enter your information</h3>
+                <p>
+                    Add basic information such as age, gender,
+                    height and weight.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">02</span>
+                <h3>Understand your BMI</h3>
+                <p>
+                    Get a simple BMI result and understand
+                    which screening range it falls into.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">03</span>
+                <h3>See what's next</h3>
+                <p>
+                    The app uses your BMI range and relevant
+                    safety information to determine suitable guidance.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">04</span>
+                <h3>Explore nutrition</h3>
+                <p>
+                    View general nutrition estimates and
+                    continue toward food guidance.
+                </p>
+            </div>
 
         </div>
-    </header>
+    </section>
 
 
-    <!-- ================= LANDING PAGE ================= -->
+    <section class="section features-section">
+        <div class="section-heading">
+            <p class="section-tag">FEATURES</p>
+            <h2>More than a BMI calculator</h2>
+        </div>
 
-    <main id="landingPage">
+        <div class="features-grid">
 
-        <section class="hero">
-            <div class="container hero-content">
-
-                <div class="hero-text">
-
-                    <span class="badge">
-                        Smart Nutrition Guidance
-                    </span>
-
-                    <h1>
-                        Your BMI is just the
-                        <span>starting point.</span>
-                    </h1>
-
-                    <p>
-                        Understand your BMI, choose your goal,
-                        and get personalized nutrition guidance
-                        based on your preferences.
-                    </p>
-
-                    <button class="btn btn-primary" id="startBtn">
-                        Start Your Journey →
-                    </button>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- HOW IT WORKS -->
-
-        <section class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">HOW IT WORKS</span>
-
-                    <h2>
-                        From BMI to better decisions
-                    </h2>
-
-                    <p>
-                        A simple journey designed to help you
-                        understand what comes after calculating BMI.
-                    </p>
-                </div>
-
-
-                <div class="steps-grid">
-
-                    <div class="step-card">
-                        <div class="step-number">01</div>
-
-                        <h3>Know Your BMI</h3>
-
-                        <p>
-                            Enter your basic information and
-                            calculate your BMI.
-                        </p>
-                    </div>
-
-
-                    <div class="step-card">
-                        <div class="step-number">02</div>
-
-                        <h3>Choose Your Goal</h3>
-
-                        <p>
-                            Select whether you want to gain,
-                            maintain, or lose weight.
-                        </p>
-                    </div>
-
-
-                    <div class="step-card">
-                        <div class="step-number">03</div>
-
-                        <h3>Get Nutrition Guidance</h3>
-
-                        <p>
-                            Understand calories, protein,
-                            carbohydrates and food options.
-                        </p>
-                    </div>
-
-
-                    <div class="step-card">
-                        <div class="step-number">04</div>
-
-                        <h3>Track Your Progress</h3>
-
-                        <p>
-                            Keep your journey organized and
-                            monitor your progress over time.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- FEATURES -->
-
-        <section class="section section-soft">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">FEATURES</span>
-
-                    <h2>
-                        Built around real food and real people
-                    </h2>
-                </div>
-
-
-                <div class="features-grid">
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">🍛</div>
-
-                        <h3>Indian Food Focus</h3>
-
-                        <p>
-                            Discover familiar Indian food options
-                            instead of generic diet suggestions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">🧠</div>
-
-                        <h3>Food Intelligence</h3>
-
-                        <p>
-                            Understand nutrition values,
-                            alternatives and things to know
-                            about different foods.
-                        </p>
-
-                    </div>
-
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">🤖</div>
-
-                        <h3>AI-Powered Guidance</h3>
-
-                        <p>
-                            Future AI integration can make
-                            recommendations more personalized.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- CTA -->
-
-        <section class="cta-section">
-            <div class="container">
-
-                <h2>
-                    Ready to understand your BMI?
-                </h2>
-
+            <div class="feature-card">
+                <h3>Indian Food Focus</h3>
                 <p>
-                    Start with your basic information.
+                    Explore familiar Indian food options
+                    instead of generic recommendations.
                 </p>
-
-                <button class="btn btn-primary" id="ctaBtn">
-                    Calculate My BMI →
-                </button>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- ================= BMI JOURNEY ================= -->
-
-    <main id="bmiPage" class="app-page hidden">
-
-        <div class="container">
-
-            <div class="journey-header">
-
-                <button class="back-btn" id="backBtn">
-                    ← Back
-                </button>
-
-                <div>
-                    <span class="section-label">
-                        STEP 1 OF YOUR JOURNEY
-                    </span>
-
-                    <h2>
-                        Let's understand your BMI
-                    </h2>
-
-                    <p>
-                        Enter your basic information below.
-                    </p>
-                </div>
-
             </div>
 
+            <div class="feature-card">
+                <h3>Food Intelligence</h3>
+                <p>
+                    Understand nutrition, alternatives and
+                    important things to know about foods.
+                </p>
+            </div>
 
-            <!-- BMI FORM -->
+            <div class="feature-card">
+                <h3>AI-Powered Guidance</h3>
+                <p>
+                    Future versions can use AI to make
+                    explanations more useful and personalized.
+                </p>
+            </div>
 
-            <div class="form-card">
-
-                <div class="form-group">
-
-                    <label for="age">
-                        Age
-                    </label>
-
-                    <input
-                        type="number"
-                        id="age"
-                        placeholder="Enter your age"
-                        min="1"
-                        max="120"
-                    >
-
-                </div>
+        </div>
+    </section>
 
 
-                <div class="form-group">
+    <section class="cta-section">
+        <h2>Start with your BMI.</h2>
+        <p>Then discover what comes next.</p>
 
-                    <label for="height">
-                        Height (cm)
-                    </label>
+        <button class="btn btn-primary" id="ctaBtn">
+            Start Now
+        </button>
+    </section>
 
-                    <input
-                        type="number"
-                        id="height"
-                        placeholder="Example: 170"
-                        min="50"
-                        max="250"
-                    >
-
-                </div>
+</section>
 
 
-                <div class="form-group">
+<!-- ================= BMI PAGE ================= -->
 
-                    <label for="weight">
-                        Weight (kg)
-                    </label>
+<section id="bmiPage" class="app-page hidden">
 
-                    <input
-                        type="number"
-                        id="weight"
-                        placeholder="Example: 65"
-                        min="10"
-                        max="300"
-                    >
+    <div class="journey-header">
+        <button class="back-btn" id="backBtn">← Back</button>
 
-                </div>
+        <div>
+            <p class="section-tag">STEP 1</p>
+            <h2>Your Information</h2>
+        </div>
+    </div>
 
+
+    <div class="form-card">
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter your age"
+                min="1"
+                max="120"
+            >
+        </div>
+
+
+        <div class="form-group">
+            <label>Gender</label>
+
+            <div class="gender-grid">
 
                 <button
-                    class="btn btn-primary full-width"
-                    id="calculateBtn"
+                    type="button"
+                    class="gender-card"
+                    data-gender="male"
+                    id="maleGenderBtn"
                 >
-                    Calculate BMI
+                    <strong>Male</strong>
+                    <span>Select</span>
                 </button>
 
-                <p class="form-note">
-                    Your information is used only to calculate
-                    your BMI in this prototype.
+                <button
+                    type="button"
+                    class="gender-card"
+                    data-gender="female"
+                    id="femaleGenderBtn"
+                >
+                    <strong>Female</strong>
+                    <span>Select</span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Pregnancy question appears only for Female + Age >= 22 -->
+
+        <div id="pregnancySection" class="pregnancy-section hidden">
+
+            <div class="pregnancy-question">
+                <p class="pregnancy-title">
+                    Are you currently pregnant?
                 </p>
 
-            </div>
-
-
-            <!-- BMI RESULT -->
-
-            <div id="resultCard" class="result-card hidden">
-
-                <div class="result-top">
-
-                    <div>
-                        <span class="section-label">
-                            YOUR BMI
-                        </span>
-
-                        <div id="bmiValue" class="bmi-value">
-                            0
-                        </div>
-
-                    </div>
-
-
-                    <div id="bmiCategory" class="bmi-category">
-                        —
-                    </div>
-
-                </div>
-
-
-                <div class="result-info">
-
-                    <h3>
-                        What does this mean?
-                    </h3>
-
-                    <p id="bmiMessage">
-                        Your BMI interpretation will appear here.
-                    </p>
-
-                </div>
-
-
-                <div class="next-step">
-
-                    <h3>
-                        What's next?
-                    </h3>
-
-                    <p>
-                        BMI is only a starting point. Choose your
-                        goal to continue your nutrition journey.
-                    </p>
-
-                    <button
-                        class="btn btn-primary"
-                        id="goalBtn"
-                    >
-                        Continue →
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </main>
-
-
-    <!-- ================= GOAL PAGE ================= -->
-
-    <main id="goalPage" class="app-page hidden">
-
-        <div class="container">
-
-            <div class="journey-header">
-
-                <button class="back-btn" id="goalBackBtn">
-                    ← Back
-                </button>
-
-                <div>
-
-                    <span class="section-label">
-                        STEP 2
-                    </span>
-
-                    <h2>
-                        What's your goal?
-                    </h2>
-
-                    <p>
-                        Choose what you want to focus on.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="goal-grid">
-
-                <button class="goal-card" data-goal="gain">
-
-                    <div class="goal-icon">
-                        ↗
-                    </div>
-
-                    <h3>
-                        Healthy Weight Gain
-                    </h3>
-
-                    <p>
-                        Build a nutrition-focused plan for
-                        healthy weight gain.
-                    </p>
-
-                </button>
-
-
-                <button class="goal-card" data-goal="maintain">
-
-                    <div class="goal-icon">
-                        →
-                    </div>
-
-                    <h3>
-                        Maintain Weight
-                    </h3>
-
-                    <p>
-                        Focus on balanced nutrition and
-                        maintaining your current weight.
-                    </p>
-
-                </button>
-
-
-                <button class="goal-card" data-goal="loss">
-
-                    <div class="goal-icon">
-                        ↘
-                    </div>
-
-                    <h3>
-                        Healthy Weight Loss
-                    </h3>
-
-                    <p>
-                        Focus on sustainable nutrition and
-                        healthy weight management.
-                    </p>
-
-                </button>
-
-            </div>
-
-
-            <div id="goalResult" class="goal-result hidden">
-
-                <span class="section-label">
-                    YOUR SELECTION
-                </span>
-
-                <h2 id="selectedGoal">
-                    —
-                </h2>
-
-                <p>
-                    Next, we'll use your goal and food preference
-                    to build your nutrition guidance.
+                <p class="pregnancy-note">
+                    This helps us avoid showing unsuitable
+                    weight-management guidance.
                 </p>
+            </div>
+
+            <div class="pregnancy-options">
+
+                <button
+                    type="button"
+                    class="pregnancy-btn"
+                    data-pregnancy="yes"
+                    id="pregnancyYesBtn"
+                >
+                    Yes
+                </button>
+
+                <button
+                    type="button"
+                    class="pregnancy-btn"
+                    data-pregnancy="no"
+                    id="pregnancyNoBtn"
+                >
+                    No
+                </button>
+
+                <button
+                    type="button"
+                    class="pregnancy-btn"
+                    data-pregnancy="unsure"
+                    id="pregnancyUnsureBtn"
+                >
+                    Not sure
+                </button>
 
             </div>
 
         </div>
 
-    </main>
+
+        <div class="form-group">
+            <label for="height">Height (cm)</label>
+
+            <input
+                type="number"
+                id="height"
+                placeholder="Enter height in cm"
+                min="50"
+                max="250"
+            >
+        </div>
 
 
-    <!-- ================= FOOTER ================= -->
+        <div class="form-group">
+            <label for="weight">Weight (kg)</label>
 
-    <footer class="footer">
+            <input
+                type="number"
+                id="weight"
+                placeholder="Enter weight in kg"
+                min="10"
+                max="300"
+                step="0.1"
+            >
+        </div>
 
-        <div class="container">
 
+        <button class="btn btn-primary full-btn" id="calculateBtn">
+            Calculate BMI
+        </button>
+
+    </div>
+
+
+    <div id="resultCard" class="result-card hidden">
+
+        <p class="result-label">Your BMI</p>
+
+        <div id="bmiValue" class="bmi-value">0</div>
+
+        <h3 id="bmiCategory">-</h3>
+
+        <p id="bmiMessage"></p>
+
+        <button class="btn btn-primary" id="goalBtn">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GOAL PAGE ================= -->
+
+<section id="goalPage" class="app-page hidden">
+
+    <div class="journey-header">
+        <button class="back-btn" id="goalBackBtn">← Back</button>
+
+        <div>
+            <p class="section-tag">STEP 2</p>
+            <h2>What's Next?</h2>
+        </div>
+    </div>
+
+
+    <div class="goal-intro">
+
+        <h3>Guidance based on your BMI</h3>
+
+        <p>
+            Your BMI screening range helps determine which
+            direction is relevant for the next step.
+        </p>
+
+    </div>
+
+
+    <div id="goalCards" class="goal-grid">
+
+        <button
+            type="button"
+            class="goal-card"
+            data-goal="gain"
+            id="gainGoal"
+        >
+            <h3>Healthy Weight Gain</h3>
             <p>
-                © 2026 NutriGuide
+                General nutrition guidance for supporting
+                healthy weight gain.
+            </p>
+        </button>
+
+
+        <button
+            type="button"
+            class="goal-card"
+            data-goal="maintain"
+            id="maintainGoal"
+        >
+            <h3>Maintain Weight</h3>
+            <p>
+                General balanced nutrition guidance for
+                maintaining your current weight.
+            </p>
+        </button>
+
+
+        <button
+            type="button"
+            class="goal-card"
+            data-goal="loss"
+            id="lossGoal"
+        >
+            <h3>Weight Management</h3>
+            <p>
+                General guidance for managing weight
+                when BMI is above the standard screening range.
+            </p>
+        </button>
+
+    </div>
+
+
+    <div id="goalResult" class="goal-result hidden">
+
+        <p class="result-label">Suggested direction</p>
+
+        <h3 id="selectedGoal">-</h3>
+
+        <p id="goalResultMessage"></p>
+
+        <button class="btn btn-primary" id="nutritionContinueBtn">
+            Continue →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NUTRITION PAGE ================= -->
+
+<section id="nutritionPage" class="app-page hidden">
+
+    <div class="journey-header">
+        <button class="back-btn" id="nutritionBackBtn">
+            ← Back
+        </button>
+
+        <div>
+            <p class="section-tag">STEP 3</p>
+            <h2>Nutrition Guidance</h2>
+        </div>
+    </div>
+
+
+    <div class="nutrition-summary">
+
+        <div>
+            <span>BMI</span>
+            <strong id="nutritionBMI">0</strong>
+        </div>
+
+        <div>
+            <span>Direction</span>
+            <strong id="nutritionGoal">-</strong>
+        </div>
+
+    </div>
+
+
+    <div class="nutrition-grid">
+
+        <div class="nutrition-card">
+
+            <p class="nutrition-label">
+                Daily Energy Needs
             </p>
 
-            <p>
-                General wellness information —
-                not a medical diagnosis.
+            <div class="nutrition-value">
+                <span id="calorieValue">0</span>
+            </div>
+
+            <p class="nutrition-unit">
+                kcal / day
+            </p>
+
+            <p class="nutrition-description">
+                Estimated energy your body may need from food each day.
             </p>
 
         </div>
 
-    </footer>
+
+        <div class="nutrition-card">
+
+            <p class="nutrition-label">
+                Daily Protein
+            </p>
+
+            <div class="nutrition-value">
+                <span id="proteinValue">0</span>
+            </div>
+
+            <p class="nutrition-unit">
+                grams / day
+            </p>
+
+            <p class="nutrition-description">
+                A general estimate based on the information provided.
+            </p>
+
+        </div>
 
 
-    <script src="js/app.js"></script>
+        <div class="nutrition-card">
+
+            <p class="nutrition-label">
+                Daily Carbohydrates
+            </p>
+
+            <div class="nutrition-value">
+                <span id="carbValue">0</span>
+            </div>
+
+            <p class="nutrition-unit">
+                grams / day
+            </p>
+
+            <p class="nutrition-description">
+                A general estimate based on the information provided.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="guidance-card">
+
+        <h3>What's next?</h3>
+
+        <p>
+            Continue to explore food preferences and
+            Indian food recommendations.
+        </p>
+
+        <button class="btn btn-primary" id="foodPreferenceBtn">
+            Choose Food Preference
+        </button>
+
+    </div>
+
+
+    <div class="disclaimer">
+        <strong>Note:</strong>
+        These values are prototype estimates for general
+        informational purposes and are not medical or dietary prescriptions.
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <p>NutriGuide — BMI is just the starting point.</p>
+</footer>
+
+
+<script src="js/app.js"></script>
 
 </body>
 </html>

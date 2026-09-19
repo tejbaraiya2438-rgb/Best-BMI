@@ -1,7 +1,3 @@
-/* =========================================
-   NUTRIGUIDE - BLUE / WHITE HEALTHCARE UI
-   ========================================= */
-
 :root {
     --blue: #1976d2;
     --blue-dark: #0d47a1;
@@ -20,19 +16,10 @@
 }
 
 
-/* =========================================
-   RESET
-   ========================================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-html {
-    scroll-behavior: smooth;
 }
 
 
@@ -55,125 +42,44 @@ button {
 }
 
 
-/* =========================================
-   COMMON
-   ========================================= */
-
-.container {
-    width: min(1100px, 92%);
-    margin: auto;
-}
-
-
-.hidden {
-    display: none !important;
-}
-
-
-.section {
-    padding: 80px 0;
-}
-
-
-.section-soft {
-    background: var(--blue-soft);
-}
-
-
-.section-heading {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 45px;
-}
-
-
-.section-label {
-    display: inline-block;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    color: var(--blue);
-
-    margin-bottom: 10px;
-}
-
-
-.section-heading h2 {
-    font-size: 36px;
-    line-height: 1.2;
-
-    margin-bottom: 14px;
-}
-
-
-.section-heading p {
-    color: var(--text-light);
-}
-
-
-/* =========================================
-   HEADER
-   ========================================= */
+/* ================= HEADER ================= */
 
 .header {
-    position: sticky;
-    top: 0;
-
-    z-index: 100;
-
-    background: rgba(255, 255, 255, 0.95);
-
-    border-bottom: 1px solid var(--border);
-
-    backdrop-filter: blur(10px);
-}
-
-
-.nav {
+    width: 100%;
     min-height: 72px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
 }
 
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    font-size: 21px;
-    font-weight: 800;
-
+    font-size: 23px;
+    font-weight: 700;
     color: var(--blue-dark);
 }
 
 
-.logo-icon {
-    width: 34px;
-    height: 34px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 10px;
-
-    background: var(--blue);
-    color: var(--white);
-
-    font-size: 24px;
-    font-weight: 700;
+.nav-btn {
+    border: none;
+    background: transparent;
+    color: var(--blue);
+    font-weight: 600;
 }
 
 
-/* =========================================
-   BUTTONS
-   ========================================= */
+/* ================= COMMON ================= */
+
+.hidden {
+    display: none !important;
+}
+
 
 .btn {
     border: none;
@@ -181,25 +87,15 @@ button {
 
     padding: 13px 22px;
 
-    font-weight: 700;
+    font-weight: 600;
 
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-
-.btn:hover {
-    transform: translateY(-2px);
+    transition: 0.2s ease;
 }
 
 
 .btn-primary {
     background: var(--blue);
     color: var(--white);
-
-    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.2);
 }
 
 
@@ -208,100 +104,85 @@ button {
 }
 
 
-.btn-small {
-    background: var(--blue-light);
-    color: var(--blue-dark);
-
-    padding: 10px 16px;
-}
-
-
-.full-width {
+.full-btn {
     width: 100%;
 }
 
 
-/* =========================================
-   HERO
-   ========================================= */
+.section {
+    padding: 80px 7%;
+}
+
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+
+.section-tag {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 7px;
+}
+
+
+.section-heading h2 {
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+
+/* ================= HERO ================= */
 
 .hero {
-    padding: 95px 0 85px;
-
-    background:
-        radial-gradient(
-            circle at top right,
-            #eaf4ff 0,
-            transparent 38%
-        ),
-        var(--white);
+    padding: 100px 7%;
+    background: var(--blue-soft);
 }
 
 
 .hero-content {
-    display: flex;
-    align-items: center;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
 }
 
 
-.hero-text {
-    max-width: 720px;
-}
-
-
-.badge {
-    display: inline-block;
-
-    padding: 7px 13px;
-
-    border-radius: 30px;
-
-    background: var(--blue-light);
-    color: var(--blue-dark);
-
-    font-size: 13px;
+.hero-tag {
+    color: var(--blue);
+    font-size: 12px;
     font-weight: 700;
-
-    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
 }
 
 
 .hero h1 {
-    font-size: clamp(42px, 7vw, 72px);
+    font-size: clamp(40px, 6vw, 68px);
     line-height: 1.05;
-
+    color: var(--blue-dark);
     margin-bottom: 22px;
-
-    letter-spacing: -2px;
-}
-
-
-.hero h1 span {
-    color: var(--blue);
 }
 
 
 .hero p {
-    max-width: 620px;
-
+    max-width: 680px;
+    margin: 0 auto 28px;
     color: var(--text-light);
-
-    font-size: 18px;
-
-    margin-bottom: 30px;
 }
 
 
-/* =========================================
-   STEPS
-   ========================================= */
+/* ================= STEPS ================= */
 
 .steps-grid {
+    max-width: 1100px;
+    margin: auto;
+
     display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -310,90 +191,58 @@ button {
     padding: 25px;
 
     border: 1px solid var(--border);
-
     border-radius: var(--radius);
 
     background: var(--white);
-
     box-shadow: var(--shadow);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-.step-card:hover {
-    transform: translateY(-4px);
 }
 
 
 .step-number {
-    color: var(--blue);
-
-    font-size: 13px;
-    font-weight: 800;
+    display: inline-block;
 
     margin-bottom: 18px;
+
+    color: var(--blue);
+    font-weight: 700;
 }
 
 
 .step-card h3 {
     margin-bottom: 10px;
-
-    font-size: 18px;
 }
 
 
 .step-card p {
     color: var(--text-light);
-
     font-size: 14px;
 }
 
 
-/* =========================================
-   FEATURES
-   ========================================= */
+/* ================= FEATURES ================= */
+
+.features-section {
+    background: var(--blue-soft);
+}
+
 
 .features-grid {
+    max-width: 1100px;
+    margin: auto;
+
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
 }
 
 
 .feature-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     padding: 30px;
 
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    background: var(--white);
-
     box-shadow: var(--shadow);
-}
-
-
-.feature-icon {
-    width: 50px;
-    height: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    background: var(--blue-light);
-
-    font-size: 24px;
-
-    margin-bottom: 20px;
 }
 
 
@@ -404,119 +253,70 @@ button {
 
 .feature-card p {
     color: var(--text-light);
-
-    font-size: 14px;
 }
 
 
-/* =========================================
-   CTA
-   ========================================= */
+/* ================= CTA ================= */
 
 .cta-section {
-    padding: 85px 0;
-
+    padding: 80px 7%;
     text-align: center;
-
-    background: var(--blue-light);
 }
 
 
 .cta-section h2 {
-    font-size: 38px;
-
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-bottom: 8px;
 }
 
 
 .cta-section p {
     color: var(--text-light);
-
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 
-/* =========================================
-   APP / BMI JOURNEY
-   ========================================= */
+/* ================= APP PAGES ================= */
 
 .app-page {
-    min-height: calc(100vh - 72px);
-
-    padding: 55px 0 80px;
-
-    background: var(--blue-soft);
+    max-width: 900px;
+    margin: auto;
+    padding: 55px 7% 80px;
 }
 
 
 .journey-header {
     display: flex;
-
-    align-items: flex-start;
-
+    align-items: center;
     gap: 25px;
-
     margin-bottom: 35px;
 }
 
 
 .journey-header h2 {
-    font-size: 36px;
-
-    line-height: 1.2;
-
-    margin-bottom: 8px;
+    font-size: 30px;
 }
 
-
-.journey-header p {
-    color: var(--text-light);
-}
-
-
-/* =========================================
-   BACK BUTTON
-   ========================================= */
 
 .back-btn {
-    flex-shrink: 0;
-
     border: 1px solid var(--border);
-
     background: var(--white);
 
     color: var(--blue-dark);
 
-    padding: 10px 16px;
-
     border-radius: 10px;
+    padding: 9px 14px;
 
-    font-weight: 700;
-
-    transition: 0.2s ease;
+    font-weight: 600;
 }
 
 
-.back-btn:hover {
-    background: var(--blue-light);
-}
-
-
-/* =========================================
-   FORM CARD
-   ========================================= */
+/* ================= FORM ================= */
 
 .form-card {
-    max-width: 620px;
-
-    margin: 0 auto;
-
-    padding: 35px;
-
-    background: var(--white);
+    padding: 30px;
 
     border: 1px solid var(--border);
-
     border-radius: var(--radius);
 
     box-shadow: var(--shadow);
@@ -531,13 +331,10 @@ button {
 .form-group label {
     display: block;
 
-    font-size: 14px;
-
-    font-weight: 700;
-
     margin-bottom: 8px;
 
-    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -547,368 +344,438 @@ button {
     padding: 14px 15px;
 
     border: 1px solid var(--border);
-
     border-radius: 11px;
 
     outline: none;
 
     color: var(--text);
-
     background: var(--white);
-
-    transition:
-        border 0.2s ease,
-        box-shadow 0.2s ease;
 }
 
 
 .form-group input:focus {
     border-color: var(--blue);
-
-    box-shadow:
-        0 0 0 3px
-        rgba(25, 118, 210, 0.1);
 }
 
 
-.form-group input::placeholder {
-    color: #9aabba;
+/* ================= GENDER ================= */
+
+.gender-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
 
-.form-note {
-    margin-top: 15px;
+.gender-card {
+    padding: 17px;
 
-    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 12px;
 
+    background: var(--white);
+
+    text-align: left;
+
+    color: var(--text);
+
+    transition: 0.2s ease;
+}
+
+
+.gender-card strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+
+.gender-card span {
     color: var(--text-light);
-
     font-size: 12px;
 }
 
 
-/* =========================================
-   BMI RESULT
-   ========================================= */
-
-.result-card {
-    max-width: 760px;
-
-    margin: 30px auto 0;
-
-    background: var(--white);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    box-shadow: var(--shadow);
-
-    overflow: hidden;
-}
-
-
-.result-top {
-    padding: 30px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
+.gender-card.selected {
+    border-color: var(--blue);
     background: var(--blue-light);
 }
 
 
-.bmi-value {
-    font-size: 52px;
+/* ================= PREGNANCY ================= */
 
-    line-height: 1;
+.pregnancy-section {
+    margin-bottom: 24px;
 
-    font-weight: 800;
+    padding: 20px;
 
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    background: var(--blue-soft);
+}
+
+
+.pregnancy-title {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+.pregnancy-note {
+    color: var(--text-light);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+.pregnancy-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.pregnancy-btn {
+    padding: 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+    color: var(--text);
+
+    font-weight: 600;
+}
+
+
+.pregnancy-btn.selected {
+    border-color: var(--blue);
+    background: var(--blue-light);
     color: var(--blue-dark);
 }
 
 
-.bmi-category {
-    padding: 9px 14px;
+/* ================= RESULT ================= */
 
-    border-radius: 30px;
+.result-card {
+    margin-top: 25px;
 
-    background: var(--white);
+    padding: 35px;
 
-    color: var(--blue-dark);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 
-    font-size: 13px;
-
-    font-weight: 700;
+    background: var(--blue-soft);
 
     text-align: center;
 }
 
 
-.result-info {
-    padding: 30px;
-
-    border-bottom: 1px solid var(--border);
+.result-label {
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 600;
 }
 
 
-.result-info h3 {
+.bmi-value {
+    margin: 5px 0;
+
+    color: var(--blue-dark);
+
+    font-size: 52px;
+    font-weight: 700;
+}
+
+
+.result-card h3 {
     margin-bottom: 8px;
 }
 
 
-.result-info p {
+.result-card p {
     color: var(--text-light);
-
-    font-size: 15px;
-}
-
-
-.next-step {
-    padding: 30px;
-}
-
-
-.next-step h3 {
-    margin-bottom: 8px;
-}
-
-
-.next-step p {
-    color: var(--text-light);
-
     margin-bottom: 20px;
 }
 
 
-/* =========================================
-   GOAL PAGE
-   ========================================= */
+/* ================= GOAL ================= */
+
+.goal-intro {
+    margin-bottom: 25px;
+}
+
+
+.goal-intro p {
+    color: var(--text-light);
+}
+
 
 .goal-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
-
-    max-width: 950px;
-
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 
 .goal-card {
+    padding: 25px;
+
     text-align: left;
 
     border: 1px solid var(--border);
-
     border-radius: var(--radius);
 
     background: var(--white);
-
-    padding: 28px;
 
     color: var(--text);
 
     box-shadow: var(--shadow);
 
-    transition:
-        transform 0.2s ease,
-        border 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: 0.2s ease;
 }
 
 
 .goal-card:hover {
-    transform: translateY(-4px);
-
+    transform: translateY(-2px);
     border-color: var(--blue);
 }
 
 
 .goal-card.selected {
-    border: 2px solid var(--blue);
-
+    border-color: var(--blue);
     background: var(--blue-light);
-
-    box-shadow:
-        0 10px 30px
-        rgba(25, 118, 210, 0.15);
-}
-
-
-.goal-icon {
-    width: 48px;
-    height: 48px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 13px;
-
-    background: var(--blue-light);
-
-    color: var(--blue);
-
-    font-size: 25px;
-
-    font-weight: 800;
-
-    margin-bottom: 20px;
 }
 
 
 .goal-card h3 {
-    margin-bottom: 10px;
-
-    font-size: 19px;
+    margin-bottom: 9px;
 }
 
 
 .goal-card p {
     color: var(--text-light);
-
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
-/* =========================================
-   GOAL RESULT
-   ========================================= */
-
 .goal-result {
-    max-width: 700px;
+    margin-top: 25px;
 
-    margin: 35px auto 0;
-
-    padding: 30px;
-
-    text-align: center;
-
-    background: var(--white);
-
-    border: 1px solid var(--border);
+    padding: 28px;
 
     border-radius: var(--radius);
 
-    box-shadow: var(--shadow);
+    background: var(--blue-soft);
+    border: 1px solid var(--border);
 }
 
 
-.goal-result h2 {
+.goal-result h3 {
     color: var(--blue-dark);
-
-    margin-bottom: 10px;
+    margin: 5px 0 8px;
 }
 
 
 .goal-result p {
     color: var(--text-light);
+    margin-bottom: 20px;
 }
 
 
-/* =========================================
-   FOOTER
-   ========================================= */
+/* ================= NUTRITION ================= */
 
-.footer {
-    padding: 30px 0;
+.nutrition-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    border-top: 1px solid var(--border);
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.nutrition-summary > div {
+    padding: 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    background: var(--blue-soft);
+}
+
+
+.nutrition-summary span {
+    display: block;
+
+    color: var(--text-light);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+.nutrition-summary strong {
+    color: var(--blue-dark);
+}
+
+
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.nutrition-card {
+    padding: 30px 22px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 
     background: var(--white);
 
-    text-align: center;
+    box-shadow: var(--shadow);
 }
 
 
-.footer p {
+.nutrition-label {
+    margin-bottom: 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: var(--text-light);
+}
+
+
+.nutrition-value span {
+    font-size: 38px;
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: var(--blue-dark);
+}
+
+
+.nutrition-unit {
+    margin-top: 7px;
+
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+
+.nutrition-description {
+    max-width: 280px;
+
+    margin: 16px auto 0;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: var(--text-light);
+}
+
+
+.guidance-card {
+    margin-top: 22px;
+
+    padding: 28px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: var(--blue-soft);
+}
+
+
+.guidance-card h3 {
+    margin-bottom: 7px;
+}
+
+
+.guidance-card p {
+    color: var(--text-light);
+    margin-bottom: 18px;
+}
+
+
+.disclaimer {
+    margin-top: 18px;
+
+    padding: 15px;
+
+    border-left: 3px solid var(--blue);
+
+    background: var(--blue-soft);
+
     color: var(--text-light);
 
     font-size: 12px;
-
-    margin: 4px 0;
+    line-height: 1.6;
 }
 
 
-/* =========================================
-   TABLET
-   ========================================= */
+/* ================= FOOTER ================= */
+
+.footer {
+    padding: 25px 7%;
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 800px) {
 
     .steps-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
 
     .features-grid {
         grid-template-columns: 1fr;
     }
 
-
     .goal-grid {
         grid-template-columns: 1fr;
     }
 
-
-    .journey-header {
-        gap: 15px;
-    }
-
-
-    .journey-header h2 {
-        font-size: 30px;
+    .nutrition-grid {
+        grid-template-columns: 1fr;
     }
 
 }
 
 
-/* =========================================
-   MOBILE
-   ========================================= */
-
 @media (max-width: 520px) {
 
-    .container {
-        width: 90%;
-    }
-
-
-    .section {
-        padding: 60px 0;
+    .header {
+        padding: 0 5%;
     }
 
 
     .hero {
-        padding: 65px 0;
+        padding: 75px 5%;
+    }
+
+
+    .section {
+        padding: 60px 5%;
     }
 
 
     .hero h1 {
-        font-size: 42px;
-
-        letter-spacing: -1.5px;
-    }
-
-
-    .hero p {
-        font-size: 16px;
-    }
-
-
-    .section-heading h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
@@ -917,55 +784,55 @@ button {
     }
 
 
-    .cta-section h2 {
-        font-size: 30px;
-    }
-
-
     .app-page {
-        padding: 35px 0 60px;
+        padding: 40px 5% 60px;
     }
 
 
     .journey-header {
-        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
 
     .journey-header h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
 
     .form-card {
-        padding: 24px;
-
-        border-radius: 15px;
+        padding: 22px;
     }
 
 
-    .result-top {
-        padding: 24px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
+    .gender-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
 
-    .bmi-value {
-        font-size: 46px;
+    .pregnancy-options {
+        grid-template-columns: 1fr;
     }
 
 
-    .result-info,
-    .next-step {
-        padding: 24px;
+    .nutrition-summary {
+        grid-template-columns: 1fr;
     }
 
 
-    .goal-card {
-        padding: 24px;
+    .nutrition-card {
+        padding: 28px 20px;
+    }
+
+
+    .nutrition-value span {
+        font-size: 34px;
+    }
+
+
+    .nutrition-description {
+        font-size: 12px;
+        max-width: 250px;
     }
 
 }
